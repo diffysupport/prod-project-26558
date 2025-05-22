@@ -38,7 +38,7 @@ advanced:
         - { header: Sec-CH-UA, value: '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"' }
     cookies: ''
     custom_js: "const allElements = document.querySelectorAll('*');\n  let maxHeight = 0;\n  allElements.forEach((element) => {\n    const elementBottom = element.getBoundingClientRect().bottom + window.scrollY;\n    if (elementBottom > maxHeight) {\n      maxHeight = elementBottom;\n    }\n  });\n  document.documentElement.style.height = `${maxHeight}px`;\n  document.body.style.height = `${maxHeight}px`;"
-    custom_css: "\n#body-section-3362487 {\n\tdisplay: block !important;\n\topacity: 1 !important;\n    position: unset !important;\n}\n\nimg, .absolute-fill.js-tint {\n\theight: auto !important;\n}\n\n.theme-4-header__slide.slick-slide {\n\theight: 600px !important;\n    width: 1000px !important;\n}"
+    custom_css: "\n#body-section-3362487 {\n\tdisplay: block !important;\n\topacity: 1 !important;\n    position: unset !important;\n}\n\nimg, .absolute-fill.js-tint {\n\theight: auto !important;\n}\n\n.theme-4-header__slide.slick-slide {\n\theight: 600px !important;\n}"
     mock_content:
         - { selector: '', type: title }
     login:
