@@ -24,7 +24,18 @@ advanced:
     delay: 15
     scroll: true
     headers:
-        - { header: '', value: '' }
+        - { header: Accept-Language, value: 'en-US,en;q=0.9' }
+        - { header: User-Agent, value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36' }
+        - { header: Sec-Fetch-Dest, value: document }
+        - { header: Sec-Fetch-Mode, value: navigate }
+        - { header: Sec-Fetch-Site, value: same-origin }
+        - { header: Sec-Fetch-User, value: '?1' }
+        - { header: Upgrade-Insecure-Requests, value: '1' }
+        - { header: Connection, value: keep-alive }
+        - { header: DNT, value: '1' }
+        - { header: Cache-Control, value: max-age=0 }
+        - { header: Accept-Encoding, value: 'gzip, deflate, br' }
+        - { header: Sec-CH-UA, value: '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"' }
     cookies: ''
     custom_js: ''
     custom_css: ''
@@ -32,9 +43,9 @@ advanced:
         - { selector: '', type: title }
     login:
         type: custom
-        click_element: false
-        click_element_selector: ''
-        login_url: 'https://accounts.pixieset.com/login/?spId=website'
+        click_element: true
+        click_element_selector: .ps-cookie-popup__button.ps-cookie-popup__button--allow
+        login_url: '/login/?spId=website'
         username: ''
         password: ''
         username_selector: '[autocomplete="username"]'
